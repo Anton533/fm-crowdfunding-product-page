@@ -1,0 +1,28 @@
+$moderate-cyan: hsl(176, 50%, 47%);
+$dark-cyan: hsl(176, 72%, 28%);
+$black: hsl(0, 0%, 0%);
+$dark-gray: hsl(0, 0%, 48%);
+
+:root {
+  --color-moderate-cyan: #{$moderate-cyan};
+  --color-dark-cyan: #{$dark-cyan};
+  --color-black: #{$black};
+  --color-dark-gray: #{$dark-gray};
+
+  --color-body-bg: #fafafa;
+
+  --font-text: 'Commissioner', sans-serif;
+
+  --container-padding-xs: 20px;
+  --container-padding-md: 30px;
+  --container-padding-lg: 40px;
+  --container-padding-xl: 50px;
+  --container-padding-xxl: 80px;
+}
+
+$screen-xs: 24.375em;
+$screen-sm: 36em;
+$screen-md: 48em;
+$screen-lg: 62em;
+$screen-xl: 75em;
+$screen-xxl: 90em;
