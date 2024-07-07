@@ -9,7 +9,7 @@
     padding-right: var(--container-padding-md);
   }
   @include respond(lg) {
-    max-width: 1440px;
+    max-width: 900px;
     padding-left: var(--container-padding-lg);
     padding-right: var(--container-padding-lg);
   }
