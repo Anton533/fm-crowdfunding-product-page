@@ -1,12 +1,32 @@
 .cta {
-  background-color: #fff;
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
+  position: relative;
 
-  transform: translateY(-33%);
+  padding-top: 57px;
+  padding-bottom: 46px;
+  padding-left: 48px;
+  padding-right: 48px;
 
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-bottom: 26px;
+
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  &__title {
+    font-size: 28px;
+    color: var(--color-black);
+
+    margin-bottom: 15px;
+  }
+  &__text {
+    margin-bottom: 40px;
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
