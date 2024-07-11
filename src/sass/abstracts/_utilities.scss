@@ -8,3 +8,13 @@
     margin-top: auto;
   }
 }
+
+.content {
+  transform: translateY(-92px);
+}
+
+.section {
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
