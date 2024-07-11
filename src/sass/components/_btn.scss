@@ -1,5 +1,45 @@
-.btn {
+.btn,
+.bookmark {
+  cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+}
+
+.btn {
+  color: #fff;
+  padding: 19px 40px;
+  background-color: var(--color-moderate-cyan);
+  transition: all 0.15s ease-in-out;
+
+  &:hover {
+    background-color: var(--color-dark-cyan);
+  }
+}
+
+.bookmark {
+  color: var(--color-dark-gray);
+  transition: all 0.15s ease-in-out;
+
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 25px;
+
+  .icon {
+    color: #2e2e2e;
+    font-size: 55px;
+    margin-right: 16px;
+    transition: all 0.15s ease-in-out;
+  }
+}
+.bookmark.bookmarked {
+  color: var(--color-dark-cyan);
+  .icon {
+    color: var(--color-dark-cyan);
+  }
 }
