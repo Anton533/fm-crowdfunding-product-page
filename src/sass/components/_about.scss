@@ -2,11 +2,15 @@
   padding: 46px 48px;
   text-align: left;
 
-  h3 {
+  &__title {
     font-size: 20px;
     margin-bottom: 36px;
   }
-  p {
+  &__text-wrapper {
+    margin-bottom: 40px;
+  }
+  &__text {
+    font-size: 16.1px;
     line-height: 1.9;
     margin-bottom: 27px;
   }
