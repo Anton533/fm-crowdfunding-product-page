@@ -10,7 +10,9 @@
 }
 
 .content {
-  transform: translateY(-92px);
+  transform: translateY(-45px);
+  @include respond(xl) {
+  }
 }
 
 .section {
