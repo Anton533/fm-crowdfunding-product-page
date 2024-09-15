@@ -9,6 +9,17 @@
   &__list-link {
     text-decoration: none;
     color: #fff;
+    transition: all 0.15s ease-in-out;
+  }
+  &__list-link:hover {
+    color: var(--color-moderate-cyan-lighter);
+  }
+
+  @include respond(xs) {
+    display: none;
+  }
+  @include respond(xl) {
+    display: block;
   }
 }
 
@@ -17,8 +28,22 @@
   justify-content: space-between;
   align-items: center;
 
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 166px;
-  padding-right: 162px;
+  &__btn-wrapper {
+    @include respond(xl) {
+      display: none;
+    }
+  }
+
+  @include respond(xs) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @include respond(xl) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 166px;
+    padding-right: 162px;
+  }
 }
