@@ -7,15 +7,36 @@
   margin-bottom: 26px;
 
   &__inner {
-    display: flex;
-    justify-content: space-around;
+    @include respond(xl) {
+      display: flex;
+      justify-content: space-around;
+    }
     margin-bottom: 37px;
+
+    & hr {
+      margin: 0 auto;
+      height: 1px;
+      border-width: 0;
+      max-width: 85px;
+      color: var(--color-dark-gray);
+      background-color: var(--color-dark-gray);
+      opacity: 0.3;
+      margin-bottom: 25px;
+
+      @include respond(xl) {
+        display: none;
+      }
+    }
   }
 
   &__item {
     flex: 1;
-    text-align: left;
+    margin-bottom: 20px;
 
+    @include respond(xl) {
+      text-align: left;
+      margin-bottom: 0;
+    }
     h2 {
       font-weight: 700;
       font-size: 32px;
@@ -24,15 +45,25 @@
     }
     p {
       font-size: 15px;
+      margin-bottom: 25px;
+
+      @include respond(xl) {
+        margin-bottom: 0;
+      }
     }
   }
 
   &__item:not(:last-child) {
-    border-right: 1px solid var(--color-dark-gray);
+    @include respond(xl) {
+      border-right: 1px solid var(--color-dark-gray);
+      border-bottom: none;
+    }
   }
 
   &__item:not(:first-child) {
-    margin-left: 48px;
+    @include respond(xl) {
+      margin-left: 48px;
+    }
   }
 
   &__progress-bar {
