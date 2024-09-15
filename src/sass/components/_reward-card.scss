@@ -3,17 +3,27 @@
   border-radius: var(--border-radius);
   border: 1px solid var(--color-dark-gray);
 
-  padding-top: 38px;
-  padding-bottom: 31px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 
-  padding-left: 31px;
-  padding-right: 32px;
+  @include respond(xl) {
+    padding-top: 38px;
+    padding-bottom: 31px;
+    padding-left: 31px;
+    padding-right: 32px;
+  }
+
+  margin-bottom: 26px;
 
   &__header,
   &__footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include respond(xl) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
   &__header {
@@ -22,6 +32,10 @@
 
   &__title {
     font-size: 18px;
+    margin-bottom: 10px;
+    @include respond(xl) {
+      margin-bottom: 0;
+    }
   }
 
   &__link {
@@ -43,6 +57,10 @@
 
   &__left {
     display: flex;
+    margin-bottom: 30px;
+    @include respond(xl) {
+      margin-bottom: 0;
+    }
   }
   &__left-bold {
     font-size: 32px;
@@ -51,11 +69,25 @@
     margin-right: 9px;
   }
   &__left-text {
-    margin-top: 11px;
+    align-self: center;
   }
   .btn {
     font-size: 15px;
     font-weight: 500;
     padding: 15px 30px;
+  }
+}
+
+.reward-card.not-active {
+  opacity: 0.5;
+  .btn {
+    background-color: var(--color-dark-gray);
+    cursor: default;
+  }
+  .reward-card__link {
+    cursor: default;
+    &:hover {
+      color: var(--color-moderate-cyan);
+    }
   }
 }
