@@ -5,9 +5,12 @@ $dark-gray: hsl(0, 0%, 48%);
 
 :root {
   --color-moderate-cyan: #{$moderate-cyan};
+  --color-moderate-cyan-lighter: #{lighten($moderate-cyan, 15%)};
   --color-dark-cyan: #{$dark-cyan};
   --color-black: #{$black};
+
   --color-dark-gray: #{$dark-gray};
+  --color-gray-lighter: #{lighten($dark-gray, 25%)};
 
   --color-body-bg: #fafafa;
 
