@@ -5,14 +5,12 @@
   align-items: center;
   justify-content: center;
 
-  font-weight: 700;
   border: none;
   border-radius: 50px;
 }
 
 .btn {
   color: #fff;
-  padding: 19px 40px;
   background-color: var(--color-moderate-cyan);
   transition: all 0.15s ease-in-out;
 
@@ -21,20 +19,45 @@
   }
 }
 
+.btn--sm {
+  padding: 16px 20px;
+}
+.btn--md {
+  padding: 20px 60px;
+
+  @include respond(xl) {
+    padding: 19px 40px;
+  }
+  font-weight: 700;
+}
+
 .bookmark {
   color: var(--color-dark-gray);
   transition: all 0.15s ease-in-out;
+  font-weight: 700;
 
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
-  padding-right: 25px;
+
+  @include respond(xl) {
+    padding-right: 25px;
+  }
+
+  &__text {
+    display: none;
+    @include respond(xl) {
+      display: block;
+    }
+  }
 
   .icon {
     color: #2e2e2e;
     font-size: 55px;
-    margin-right: 16px;
     transition: all 0.15s ease-in-out;
+    @include respond(xl) {
+      margin-right: 16px;
+    }
   }
 }
 .bookmark.bookmarked {
