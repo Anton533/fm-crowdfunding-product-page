@@ -1,0 +1,56 @@
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+}
+
+.close-btn:focus {
+  outline: none;
+}
+.close-btn__inner {
+  position: relative;
+  height: 18px;
+  width: 18px;
+  pointer-events: none;
+}
+
+.close-btn__top,
+.close-btn__bottom {
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  background-color: var(--color-dark-gray);
+  transition: all 0.3s ease-out;
+  pointer-events: none;
+}
+
+.close-btn__top {
+  top: 50%;
+  transform: rotate(225deg);
+}
+
+.close-btn__bottom {
+  top: 50%;
+  transform: rotate(-225deg);
+}
+
+.close-btn:hover .close-btn__top {
+  transform: rotate(135deg);
+  background-color: var(--color-black);
+}
+
+.close-btn:hover .close-btn__bottom {
+  transform: rotate(-135deg);
+  background-color: var(--color-black);
+}
