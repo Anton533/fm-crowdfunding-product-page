@@ -29,3 +29,18 @@ gotItBtn.addEventListener('click', () => {
   // body.classList.remove('modal-open');
   modal.classList.remove('is-open');
 });
+
+(function headerMenu() {
+  const menuBtnEl = document.getElementById('menu-btn');
+  const menuEl = document.getElementById('menu');
+
+  document.addEventListener('scroll', () => {
+    menuEl.classList.toggle('scrolled', window.scrollY > 0);
+  });
+
+  menuBtnEl.addEventListener('click', function () {
+    menuEl.classList.toggle('menu-open');
+    document.body.classList.toggle('scroll-disabled');
+    menuBtnEl.classList.toggle('active');
+  });
+})();
